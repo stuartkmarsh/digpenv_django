@@ -1,0 +1,6 @@
+<h3>{{ item.name }}</h3>
+<p>{{ item.content }}</p>
+
+{% if user.is_authenticated %}
+<p><a href="{% url upvote item.id %}">Upvote</a></p>
+{% endif %}
